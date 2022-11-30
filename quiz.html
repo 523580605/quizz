@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Sistemas de Numeração</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz sobre Sistemas de Numeração</h1>
+    </header>
+    <div class="container">
+      <header>
+        <div class="col-2">
+          <a href="#" data-contraste="1" title="Contraste Branco" id="contraste_branco">Contraste Branco</a>
+      </div>
+      <div class="col-2">
+          <a href="#" data-contraste="2" title="Contraste Preto" id="contraste_preto">Contraste Preto</a>
+      </div>
+      <div class="col-2">
+        <a href="#" data-contraste="2" title="Sem Contraste" id="sem_contraste">Sem Contraste</a>
+    </div>
+      </header>
+      <main>
+        <!-- QUIZZ CONTAINER -->
+        <div id="quizz-container">
+          <p id="question">
+            <span id="question-number">1</span> &#8212;
+            <span id="question-text"><!-- Perguntas --></span>
+          </p>
+          <div id="answers-box">
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          </div>
+        </div>
+
+        <!-- SCORE BOARD -->
+        <div id="score-container" class="hide">
+          <h2>Parabéns</h2>
+          <p id="display-score"><span>90</span>%</p>
+          <p>
+            Você acertou <span id="correct-answers">0</span> de
+            <span id="questions-qty">10</span> perguntas
+          </p>
+          <button id="restart">Refazer quiz!</button>
+        </div>
+
+        <!-- TEMPLATE RESPOSTA -->
+        <button class="answer-template hide">
+          <span class="btn-letter"></span> <span class="question-answer"></span>
+        </button>
+      </main>
+      <footer>
+        <p>
+          Quiz desenvolvido por: João Penso, Letícia Baroncello, Maria Kozak e Steve Pagno.<br>
+          
+          Trabalho integrador de Fudamentos de Informática e Web Design.
+        </p>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
